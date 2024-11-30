@@ -3,3 +3,12 @@ h2,
 p {
   text-align: center;
 }
+
+/* body {
+  background-color: burlywood;
+} */
+
+#menu {
+  width: 80%;
+  background-color: burlywood;
+}
