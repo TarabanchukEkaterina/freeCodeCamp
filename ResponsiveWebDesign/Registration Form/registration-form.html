@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registration Form</title>
-  <link rel="stylesheet" href="/ResponsiveWebDesign/Registration Form/registration-form.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -20,11 +20,19 @@
     </fieldset>
     <fieldset>
       <legend>Account type (required)</legend>
-      <label for="personal-account"><input type="radio" name="account-type" checked id="personal-account" />
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked />
         Personal</label>
-      <label for="business-account"><input type="radio" name="account-type" id="business-account" /> Business</label>
+      <label for="business-account"><input id="business-account" type="radio" name="account-type" /> Business</label>
     </fieldset>
-    <fieldset></fieldset>
+    <fieldset>
+      <label>Upload a profile picture: <input type="file" /></label>
+      <label>Input your age (years): <input type="number" min="13" max="120" /></label>
+
+    </fieldset>
+    <label for="terms-and-conditions">
+      <input id="terms-and-conditions" type="checkbox" required /> I accept the <a
+        href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+    </label>
     <input type="submit" value="Submit" />
   </form>
 </body>
